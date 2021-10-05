@@ -1,13 +1,15 @@
 import prompt
 import random
-import brain_games
+import brain_games.scripts.brain_games
+from brain_games.cli import welcome_user
+
 
 def main():
-    correct_answers = 0
     name = welcome_user()
+    correct_answers = 0
     print('Answer "yes" if the number is even, otherwise answer "no".')
     while correct_answers != 3:
-        number = random.randit()
+        number = random.randint(0, 31231)
         quest = 'Question: ' + str(number) + ' '
         answer = prompt.string(quest, empty=True)
         if (answer == 'yes' and number % 2 == 0) or (answer == 'no' and number % 2 == 1):
@@ -18,14 +20,9 @@ def main():
                 antipode = 'no'
             else:
                 antipode = 'yes'
-            print('{}'.format(answer) + ' is wrong answer ;(. Correct answer was ' + antipode)
+            print('"{}"'.format(answer) + ' is wrong answer ;(. Correct answer was "{}"'.format(antipode))
             print('Let\'s try again, {}!'.format(name))
             break
 
     if correct_answers == 3:
         print('Congratulations, {}!'.format(name))
-
-
-brain_games.main()
-name = welcome_user()
-main()
