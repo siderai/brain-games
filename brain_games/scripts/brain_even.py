@@ -5,7 +5,11 @@ from brain_games.cli import welcome_user
 
 
 def main():
-    name = welcome_user()
+    print('Welcome to the Brain Games!')
+    name = ''
+    while name == '':
+            print('May I have your name? ', end='')
+            name = input()
     correct_answers = 0
     print('Answer "yes" if the number is even, otherwise answer "no".')
     while correct_answers != 3:
