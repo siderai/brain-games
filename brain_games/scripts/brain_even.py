@@ -1,6 +1,5 @@
-import prompt
 import random
-
+import prompt
 
 def main():
     print('Welcome to the Brain Games!')
@@ -22,7 +21,7 @@ def main():
                 antipode = 'no'
             else:
                 antipode = 'yes'
-            print('"{}"'.format(answer) + ' is wrong answer ;(. Correct answer was "{}"'.format(antipode))
+            print('"{}" is wrong answer ;(. Correct answer was "{}"'.format(answer, antipode))
             print('Let\'s try again, {}!'.format(name))
             break
 
