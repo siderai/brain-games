@@ -1,3 +1,4 @@
+#!/usr/bin/env python
 import random
 import prompt
 
@@ -9,7 +10,7 @@ def main():
             name = input()
     correct_answers = 0
     print('Answer "yes" if the number is even, otherwise answer "no".')
-
+    while correct_answers < 3:
         number = random.randint(0, 31231)
         quest = 'Question: ' + str(number) + ' '
         answer = prompt.string(quest, empty=True)
