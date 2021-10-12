@@ -1,6 +1,3 @@
-install:
-	poetry install
-
 brain-games:
 	poetry run brain-games
 
@@ -15,6 +12,12 @@ brain-gcd:
 
 brain-prime:
 	poetry run brain-prime
+
+brain-progression:
+	poetry run brain-progression
+
+install:
+	poetry install
 
 build:
 	poetry build
