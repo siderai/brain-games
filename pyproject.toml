@@ -2,9 +2,9 @@
 name = "hexlet-code"
 version = "0.2.0"
 description = "Brain Games is a pack of five console arithmetic games"
-authors = ["Alexander Sidorov"]
+authors = "Alexander Sidorov"
 classifiers = ["Topic :: Software Development :: Games"]
-repository = [https://github.com/siderai/python-project-lvl1]
+repository = "https://github.com/siderai/python-project-lvl1"
 packages = [
   { include = "brain_games" },
 ]
