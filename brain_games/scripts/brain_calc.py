@@ -23,14 +23,13 @@ def main():
         if answer == value:
             correct_answers += 1
             print('Correct!')
+            if correct_answers == 3:
+                print('Congratulations, {}!'.format(name))
         else:
             print('"{}" is wrong answer ;(. '.format(answer),
                   'Correct answer was "{}"'.format(value))
             print('Let\'s try again, {}!'.format(name))
             break
-
-    if correct_answers == 3:
-        print('Congratulations, {}!'.format(name))
 
 
 def ask(num1, num2, operator):
