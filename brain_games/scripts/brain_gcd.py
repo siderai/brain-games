@@ -2,12 +2,13 @@ import random
 from math import gcd
 import prompt
 
+
 def main():
     print('Welcome to the Brain Games!')
     name = ''
     while name == '':
-            print('May I have your name? ', end='')
-            name = input()
+        print('May I have your name? ', end='')
+        name = input()
     print('Hello, {}!'.format(name))
     correct_answers = 0
     print('Find the greatest common divisor of given numbers.')
@@ -21,7 +22,8 @@ def main():
             correct_answers += 1
             print('Correct!')
         else:
-            print('"{}" is wrong answer ;(. Correct answer was "{}"'.format(answer, value))
+            print('"{}" is wrong answer ;(.'.format(answer),
+                  'Correct answer was "{}"'.format(value))
             print('Let\'s try again, {}!'.format(name))
             break
 

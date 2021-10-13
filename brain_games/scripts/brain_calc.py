@@ -18,23 +18,29 @@ def main():
         number1 = random.randint(0, 20)
         number2 = random.randint(0, 20)
         operation = random.randint(0, 2)
-        if operation == 0:
-            quest = 'Question: {} + {} = '.format(number1, number2)
-            value = add(number1, number2)
-        elif operation == 1:
-            quest = 'Question: {} - {} = '.format(number1, number2)
-            value = sub(number1, number2)
-        elif operation == 2:
-            quest = 'Question: {} x {} = '.format(number1, number2)
-            value = mul(number1, number2)
-        answer = int(prompt.string(quest, empty=True))
+        answer, value = questioning(number1, number2, operation)
         if answer == value:
             correct_answers += 1
             print('Correct!')
         else:
-            print('"{}" is wrong answer ;(. Correct answer was "{}"'.format(answer, value))
+            print('"{}" is wrong answer ;(. '.format(answer),
+                  'Correct answer was "{}"'.format(value))
             print('Let\'s try again, {}!'.format(name))
             break
 
     if correct_answers == 3:
         print('Congratulations, {}!'.format(name))
+
+
+def questioning(num1, num2, operator):
+    if operator == 0:
+        quest = 'Question: {} + {} = '.format(num1, num2)
+        value = add(num1, num2)
+    elif operator == 1:
+        quest = 'Question: {} - {} = '.format(num1, num2)
+        value = sub(num1, num2)
+    elif operator == 2:
+        quest = 'Question: {} x {} = '.format(num1, num2)
+        value = mul(num1, num2)
+    answer = int(prompt.string(quest, empty=True))
+    return answer, value
