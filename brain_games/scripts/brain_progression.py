@@ -1,14 +1,14 @@
 #!/usr/bin/env python
 import random
 import prompt
-from brain_games.scripts.gameplay import play, check_answer
 
-def main():    
+
+def main():
     print('Welcome to the Brain Games!')
     name = ''
     while name == '':
-            print('May I have your name? ', end='')
-            name = input()
+        print('May I have your name? ', end='')
+        name = input()
     print('Hello, {}!'.format(name))
     # every game has its own question to answer
     print('What number is missing in the progression?')
@@ -35,12 +35,13 @@ def main():
             print('Correct!')
         else:
             # Wrong answer ends the game
-            print('"{}" is wrong answer ;(. Correct answer was "{}"'.format(answer, value))
+            print('"{}" is wrong answer ;(. '.format(answer),
+                  'Correct answer was "{}"'.format(value))
             print('Let\'s try again, {}!'.format(name))
             break
-        
     if correct_answers == 3:
         print('Congratulations, {}!'.format(name))
+
 
 def elems_listing(start, step):
     progression = [start]
