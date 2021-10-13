@@ -1,12 +1,13 @@
 [tool.poetry]
 name = "siderai_brain_games"
-version = "0.1.0"
-description = ""
-authors = ["siderai"]
+version = "0.2.0"
+description = "Brain Games is a pack of five console arithmetic games"
+authors = ["Alexander Sidorov"]
+classifiers = ["Topic :: Software Development :: Games"]
+repository = [https://github.com/siderai/python-project-lvl1]
 packages = [
   { include = "brain_games" },
 ]
-
 
 [tool.poetry.scripts]
 brain-games = "brain_games.scripts.brain_games:main"
