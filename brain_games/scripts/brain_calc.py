@@ -26,7 +26,7 @@ def main():
             if correct_answers == 3:
                 print('Congratulations, {}!'.format(name))
         else:
-            print('"{}" is wrong answer ;(. '.format(answer),
+            print('"{}" is wrong answer ;(.'.format(answer),
                   'Correct answer was "{}"'.format(value))
             print('Let\'s try again, {}!'.format(name))
             break
@@ -34,13 +34,13 @@ def main():
 
 def ask(num1, num2, operator):
     if operator == 0:
-        quest = 'Question: {} + {} '.format(num1, num2)
+        quest = 'Question: {} + {} '.format(str(num1), str(num2))
         value = str(add(num1, num2))
     elif operator == 1:
-        quest = 'Question: {} - {} '.format(num1, num2)
+        quest = 'Question: {} - {} '.format(str(num1), str(num2))
         value = str(sub(num1, num2))
     elif operator == 2:
-        quest = 'Question: {} x {} '.format(num1, num2)
+        quest = 'Question: {} x {} '.format(str(num1), str(num2))
         value = str(mul(num1, num2))
     answer = prompt.string(quest, empty=True)
     return answer, value
