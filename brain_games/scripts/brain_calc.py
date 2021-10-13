@@ -35,12 +35,12 @@ def main():
 def ask(num1, num2, operator):
     if operator == 0:
         quest = 'Question: {} + {} '.format(num1, num2)
-        value = add(num1, num2)
+        value = str(add(num1, num2))
     elif operator == 1:
         quest = 'Question: {} - {} '.format(num1, num2)
-        value = sub(num1, num2)
+        value = str(sub(num1, num2))
     elif operator == 2:
         quest = 'Question: {} x {} '.format(num1, num2)
-        value = mul(num1, num2)
+        value = str(mul(num1, num2))
     answer = prompt.string(quest, empty=True)
     return answer, value
