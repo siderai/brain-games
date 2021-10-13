@@ -1,5 +1,5 @@
 [tool.poetry]
-name = "siderai_brain_games"
+name = "hexlet-code"
 version = "0.2.0"
 description = "Brain Games is a pack of five console arithmetic games"
 authors = ["Alexander Sidorov"]
