@@ -12,13 +12,14 @@ def main():
     while name == '':
         print('May I have your name? ', end='')
         name = input()
+    print('Hello, {}!'.format(name))
     correct_answers = 0
     print('What is the result of the expression?')
     while correct_answers < 3:
         number1 = random.randint(0, 20)
         number2 = random.randint(0, 20)
         operation = random.randint(0, 2)
-        answer, value = questioning(number1, number2, operation)
+        answer, value = ask(number1, number2, operation)
         if answer == value:
             correct_answers += 1
             print('Correct!')
@@ -32,7 +33,7 @@ def main():
         print('Congratulations, {}!'.format(name))
 
 
-def questioning(num1, num2, operator):
+def ask(num1, num2, operator):
     if operator == 0:
         quest = 'Question: {} + {} = '.format(num1, num2)
         value = add(num1, num2)
