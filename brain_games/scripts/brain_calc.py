@@ -40,7 +40,7 @@ def ask(num1, num2, operator):
         quest = 'Question: {} - {} '.format(num1, num2)
         value = str(sub(num1, num2))
     elif operator == 2:
-        quest = 'Question: {} x {} '.format(num1, num2)
+        quest = 'Question: {} * {} '.format(num1, num2)
         value = str(mul(num1, num2))
     answer = prompt.string(quest, empty=True)
     return answer, value
