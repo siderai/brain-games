@@ -6,8 +6,8 @@
 
     Args:
         desc (str): Description of the game;
-        quest (func): Generate the question;
-        check (func): Checkout answer for question.
+        quest (func > int/str): Generate the question;
+        check (func > str): Checkout answer for question.
 '''
 import prompt
 
@@ -21,7 +21,7 @@ def build_and_play(desc, quest, check):
     while correct_answers < 3:
         question = quest()  # arg
         correct_value = check(question)  # arg
-        answer = input(f'Question: {question} ')
+        answer = input(f'Question: {question}? ')
         if answer == correct_value:
             print('Correct!')
             correct_answers += 1
