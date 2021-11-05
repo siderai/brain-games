@@ -5,6 +5,7 @@
 ``` 
 pip install git+https://github.com/siderai/brain-games.git 
 ```
+
 ## Games:
 ### $ brain-calc
 
