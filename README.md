@@ -29,4 +29,11 @@ Find the missing element of arithmetic progression.
 
 ## Stack:
 
-Python3, Poetry, Linux, Git, Github Actions (CI/CD), Flake8, CodeClimate, Make.
+Python3
+• Poetry 
+• Linux
+• Git
+• Github Actions (CI/CD)
+• Flake8
+• CodeClimate
+• Make
