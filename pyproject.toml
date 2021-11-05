@@ -1,10 +1,10 @@
 [tool.poetry]
-name = "hexlet-code"
+name = "siderai-brain-games"
 version = "1.1.0"
 description = "Brain Games is a pack of five console arithmetic games"
 authors = ["Alexander Sidorov"]
 classifiers = ["Topic :: Software Development :: Games"]
-repository = "https://github.com/siderai/python-project-lvl1"
+repository = "https://github.com/siderai/brain-games"
 packages = [
   { include = "brain_games" },
 ]
