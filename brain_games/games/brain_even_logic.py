@@ -1,7 +1,7 @@
 ''' Prime numbers game.
 
     To win, you must define whether
-    given number is prime or not.
+    given number is even or not.
 '''
 
 from random import randint
@@ -17,7 +17,7 @@ def quest():
 
 
 def check(quest_number):
-    ''' Test if given number is prime.
+    ''' Test if given number is even.
 
         Args:
             quest_number (int): Random number in range 99999.
