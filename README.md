@@ -30,7 +30,8 @@ Find the missing element of arithmetic progression.
 ## Stack:
 
 Python3
-• Poetry 
+• Poetry
+• PyPI
 • Linux
 • Git
 • Github Actions (CI/CD)
