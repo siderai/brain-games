@@ -19,11 +19,9 @@ def check(number):
 
 
 def is_prime(num):
-    if num > 1:
-        for i in range(2, int(num // 2) + 1):
-            if (num % i) == 0:
-                return 'no'
-            else:
-                return 'yes'
-    else:
+    if num <= 1:
         return 'no'
+    for i in range(2, int(num / 2) + 1):
+        if (num % i) == 0:
+            return 'no'
+    return 'yes'
