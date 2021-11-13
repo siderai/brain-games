@@ -34,7 +34,7 @@ Python3
 • PyPI
 • Linux
 • Git
-• Github Actions (CI/CD)
+• Github Actions (CI)
 • Flake8
 • CodeClimate
 • Make
