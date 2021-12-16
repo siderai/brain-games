@@ -26,6 +26,8 @@ publish:
 	poetry publish --dry-run
 
 package-install:
+	poetry install
+	poetry build
 	python3 -m pip install --user dist/*.whl
 
 lint:
