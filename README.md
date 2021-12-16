@@ -25,7 +25,9 @@ Python3
 ## Quickstart:
 
 ``` 
-pip install git+https://github.com/siderai/brain-games.git 
+git clone https://github.com/siderai/brain-games
+cd brain-games
+make package-install
 ```
 
 ## Games:
@@ -33,18 +35,18 @@ pip install git+https://github.com/siderai/brain-games.git
 
 Simple calculator game. Numbers and operators are selected randomly.
 
-### $ brain-even
+### $ brain-prime
 
-Define whether given number is even or not.
+Determine if the number is prime or not.
 
 ### $ brain-gcd
 
-Find greatest common divisor for random pair of numbers.
-
-### $ brain-prime
-
-Define whether given number is prime or not.
+Find greatest common divisor for the random pair of numbers.
  
 ### $ brain-progression
 
-Find the missing element of arithmetic progression. The length of progression is fixed (10), but the position of missing element and progression step are random.
+Find the missing element of arithmetic progression. The length of progression is fixed by 10 elements, but the position of missing number and the step of progression are random.
+
+### $ brain-even
+
+Determine if the given number is even.
