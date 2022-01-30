@@ -1,14 +1,14 @@
 [![Actions Status](https://github.com/siderai/python-project-lvl1/workflows/hexlet-check/badge.svg)](https://github.com/siderai/python-project-lvl1/actions) <a href="https://codeclimate.com/github/siderai/python-project-lvl1/maintainability"><img src="https://api.codeclimate.com/v1/badges/c8574923098dd1fdd82b/maintainability" /></a> ![example workflow](https://github.com/siderai/python-project-lvl1/actions/workflows/brain-games.yml/badge.svg)
 # A package of five CLI calculus games
 
-In every game you should answer three arithmetic questions. After a correct answer you pass to the next question, otherwise the game is over. All the games were written seperately, and then rewritten to avoid repetitions (DRY). Thus, unique game logic was divided from common gameplay parts: greeting, questioning, summary. The most challenging task was to create this game engine (or constructor)
-Project at hexlet.io. 
+In every game you should answer three arithmetic questions. After a correct answer you pass to the next question, otherwise the game is over. KISS, DRY, YAGNI are applied to code style. For instance, the logic of the games is divided from scripts and the game engine, which is an abstraction of common gameplay parts: greeting, questioning, summary.
+Training project at hexlet.io.
 ## Tasks: 
-1. Deploying and automation of dev environment (Linux, Make)
+1. Deploying and automation of dev environment (Linux, Make, Flake8, CC, CI)
 2. Dependencies management (Poetry)
-3. Git practice
+3. Git practice (GitHub)
 4. Python packaging experience (PyPI)
-5. Try out complexity management 
+5. Complexity management practice
 
 ## Stack:
 
