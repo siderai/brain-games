@@ -3,7 +3,7 @@
 
 In every game you should answer three arithmetic questions. After a correct answer you pass to the next question, otherwise the game is over. 
 
-KISS, DRY, YAGNI are applied to code style. Generally, this CLI app has 3 levels of abstraction, isolated from each other: script, engine and game logic. The executable scripts are divided from the logic of each game as well as from the game engine. The game engine itself is created to avoid repetitions in common gameplay parts: greeting, questioning, game summary.
+KISS, DRY, YAGNI are applied to code style. Generally, this CLI app has 3 levels of abstraction, isolated from each other: the script, the engine and the game logic. The executable scripts are divided from the logic of each game as well as from the game engine. The game engine itself is created to avoid repetitions in common gameplay parts: greeting, questioning, summary.
 
 Training project at hexlet.io.
 ## Tasks: 
