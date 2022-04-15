@@ -6,12 +6,6 @@ Insprired by mobile puzzle apps. In every game you should answer three arithmeti
 KISS, DRY, YAGNI are applied to code style. Generally, this CLI app has 3 levels of abstraction, isolated from each other: the script, the engine and the game logic. The executable scripts are divided from the logic of each game as well as from the game engine. The engine is to avoid repetitions in common gameplay parts: greeting, questioning, summary.
 
 Training project at hexlet.io.
-## Tasks: 
-1. Deploying and automation of dev environment (Linux, Make, Flake8, CodeClimate, Github Actions)
-2. Dependencies management (Poetry)
-3. Git practice (GitHub, Linux)
-4. Python packaging experience (PyPI)
-5. Complexity management practice (levels of abstraction)
 
 ## Stack:
 
@@ -24,6 +18,13 @@ Python3
 • Flake8
 • CodeClimate
 • Make
+
+## Tasks: 
+1. Deploying and automation of dev environment (Linux, Make, Flake8, CodeClimate, Github Actions)
+2. Dependencies management (Poetry)
+3. Git practice (GitHub, Linux)
+4. Python packaging experience (PyPI)
+5. Complexity management practice (Python, levels of abstraction)
 
 ## Quickstart:
 
