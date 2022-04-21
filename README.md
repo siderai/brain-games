@@ -19,7 +19,7 @@ Python3
 • CodeClimate
 • Make
 
-## Educational goals: 
+## Acquired skills: 
 1. Deploying and automation of dev environment (Linux, Make, Flake8, CodeClimate, Github Actions)
 2. Dependencies management (Poetry)
 3. Git practice (GitHub, Linux)
